@@ -5,4 +5,6 @@ pydeck
 streamlit
 millify
 plotly
-streamlit_extras.metric_cards
+streamlit_extras
+xlrd
+openpyxl
