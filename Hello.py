@@ -306,3 +306,11 @@ with dash_4:
 
         st.altair_chart(chart,use_container_width=True)
 
+with dash_5:
+    st.markdown("<h8 style='text-align: center;'><b>Data Table</h8>", unsafe_allow_html=True)
+    # Define the columns to display
+    columns_to_display = ["Order Date", "Ship Date", "Ship Mode", "Category", "Sub-Category", "Product Name", "Sales","Quantity","Discount","Profit"]
+    
+    # Filter dataframe based on defined columns and display
+    display_df = df[columns_to_display]
+    st.dataframe(display_df)  # or use st.table(display_df)
